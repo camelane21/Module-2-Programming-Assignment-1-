@@ -11,4 +11,14 @@ class MyDate {
         this.month = calendar.get(GregorianCalendar.MONTH);
         this.day = calendar.get(GregorianCalendar.DAY_OF_MONTH);
     }
+
+ public MyDate(long elapsedTime) {
+        setDate(elapsedTime);
+    }
+
+    public MyDate(int year, int month, int day) {
+        this.year = year;
+        this.month = month;
+        this.day = day;
+    }
 }
