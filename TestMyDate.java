@@ -32,4 +32,11 @@ class MyDate {
     public int getDay() {
         return day;
     }
+ public void setDate(long elapsedTime) {
+        GregorianCalendar calendar = new GregorianCalendar();
+        calendar.setTimeInMillis(elapsedTime);
+        this.year = calendar.get(GregorianCalendar.YEAR);
+        this.month = calendar.get(GregorianCalendar.MONTH);
+        this.day = calendar.get(GregorianCalendar.DAY_OF_MONTH);
+    }
 }
